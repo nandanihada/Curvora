@@ -65,25 +65,38 @@ export default {
       },
       keyframes: {
         "accordion-down": {
-          from: {
-            height: "0",
-          },
-          to: {
-            height: "var(--radix-accordion-content-height)",
-          },
+          from: { height: "0" },
+          to: { height: "var(--radix-accordion-content-height)" },
         },
         "accordion-up": {
-          from: {
-            height: "var(--radix-accordion-content-height)",
-          },
-          to: {
-            height: "0",
-          },
+          from: { height: "var(--radix-accordion-content-height)" },
+          to: { height: "0" },
+        },
+        float: {
+          "0%, 100%": { transform: "translateY(0px)" },
+          "50%": { transform: "translateY(-20px)" },
+        },
+        "pulse-glow": {
+          "0%, 100%": { opacity: "1", boxShadow: "0 0 20px rgba(233, 30, 99, 0.3)" },
+          "50%": { opacity: "0.8", boxShadow: "0 0 40px rgba(233, 30, 99, 0.5)" },
+        },
+        blob: {
+          "0%, 100%": { transform: "translate(0, 0) scale(1) rotate(0deg)" },
+          "33%": { transform: "translate(30px, -50px) scale(1.1) rotate(120deg)" },
+          "66%": { transform: "translate(-20px, 20px) scale(0.9) rotate(240deg)" },
         },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
+        float: "float 3s ease-in-out infinite",
+        "pulse-glow": "pulse-glow 2s ease-in-out infinite",
+        blob: "blob 20s ease-in-out infinite",
+      },
+      fontFamily: {
+        playfair: ["Playfair Display", "serif"],
+        poppins: ["Poppins", "sans-serif"],
+        dancing: ["Dancing Script", "cursive"],
       },
     },
   },
