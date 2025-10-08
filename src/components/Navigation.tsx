@@ -44,7 +44,7 @@ const Navigation = () => {
             <img
               src={curvoraLogo}
               alt="Curvora Logo"
-              className="h-12 w-12 object-contain transition-transform duration-300 group-hover:scale-110"
+              className="h-20 w-20 object-contain transition-all duration-500 group-hover:scale-110 animate-float drop-shadow-[0_0_15px_rgba(233,30,99,0.4)] group-hover:drop-shadow-[0_0_25px_rgba(233,30,99,0.6)]"
             />
             <div>
               <h1 className="text-2xl font-bold gradient-text">Curvora</h1>
