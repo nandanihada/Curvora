@@ -100,16 +100,18 @@ const Home = () => {
             </div>
 
             {/* Scroll Indicator */}
-            <div className="pt-12 animate-bounce">
-              <p className="text-sm text-muted-foreground mb-2">Discover More</p>
-              <ArrowRight className="h-6 w-6 mx-auto rotate-90 text-primary" />
-            </div>
+            <a href="#stats-section" className="pt-12 animate-bounce cursor-pointer">
+              <div className="p-9 my-12">
+                <p className="text-xl text-muted-foreground mb-2">Discover More</p>
+                <ArrowRight className="h-6 w-6 mx-auto rotate-90 text-primary" />
+              </div>
+            </a>
           </div>
         </div>
       </section>
 
       {/* Stats Section */}
-      <section className="py-16 bg-muted/30">
+      <section id="stats-section" className="py-16 bg-muted/30">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {stats.map((stat, index) => (
