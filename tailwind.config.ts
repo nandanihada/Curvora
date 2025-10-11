@@ -85,6 +85,10 @@ export default {
           "33%": { transform: "translate(30px, -50px) scale(1.1) rotate(120deg)" },
           "66%": { transform: "translate(-20px, 20px) scale(0.9) rotate(240deg)" },
         },
+        shine: {
+          "0%": { transform: "translateX(-100%)" },
+          "100%": { transform: "translateX(100%)" },
+        },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
@@ -92,6 +96,7 @@ export default {
         float: "float 3s ease-in-out infinite",
         "pulse-glow": "pulse-glow 2s ease-in-out infinite",
         blob: "blob 20s ease-in-out infinite",
+        shine: "shine 2s ease-in-out infinite",
       },
       fontFamily: {
         playfair: ["Playfair Display", "serif"],

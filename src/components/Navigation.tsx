@@ -38,14 +38,17 @@ const Navigation = () => {
       }`}
     >
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-20">
+        <div className="flex items-center justify-between h-24">
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-3 group">
-            <img
-              src={curvoraLogo}
-              alt="Curvora Logo"
-              className="h-20 w-20 object-contain transition-all duration-500 group-hover:scale-110 animate-float drop-shadow-[0_0_15px_rgba(233,30,99,0.4)] group-hover:drop-shadow-[0_0_25px_rgba(233,30,99,0.6)]"
-            />
+            <div className="relative overflow-hidden rounded-full">
+              <img
+                src={curvoraLogo}
+                alt="Curvora Logo"
+                className="h-32 w-32 object-contain transition-all duration-500 group-hover:scale-110 drop-shadow-[0_0_15px_rgba(233,30,99,0.4)] group-hover:drop-shadow-[0_0_25px_rgba(233,30,99,0.6)]"
+              />
+              <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/30 to-transparent -skew-x-12 animate-shine"></div>
+            </div>
             <div>
               <h1 className="text-2xl font-bold gradient-text">Curvora</h1>
               <p className="text-xs text-muted-foreground font-['Dancing_Script']">
